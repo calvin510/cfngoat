@@ -11,8 +11,8 @@ jobs:
       matrix:
         python-version: [3.8]
       steps:
-      - uses: actions/checkout@v2
-      - name: Run Bridgecrew1 
+      -uses: actions/checkout@v2
+      -name: Run Bridgecrew1 
         id: Bridgecrew1
         uses: bridgecrewio/bridgecrew-action@master 
         env:
