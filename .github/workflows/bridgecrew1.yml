@@ -13,10 +13,10 @@ jobs:
       steps:
       -uses: actions/checkout@v2
       -name: Run Bridgecrew1 
-        id: Bridgecrew1
-        uses: bridgecrewio/bridgecrew-action@master 
-        env:
-          PRISMA_API_URL: https://api0.prismacloud.io
-        with:
-          api-key: ${{ secrets.BC_API_KEY }}
-          directory: terraform/
+       id: Bridgecrew1
+       uses: bridgecrewio/bridgecrew-action@master 
+       env:
+         PRISMA_API_URL: https://api0.prismacloud.io
+       with:
+         api-key: ${{ secrets.BC_API_KEY }}
+         directory: terraform/
